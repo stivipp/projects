@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS FA -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GROW Game</title>
+</head>
+<body>
+
+<header class="mb-3">
+    <div class="container text-center">
+        <div class="row ">
+            <div class="col">
+                <h1 class="p-2">GROW GAME <i class="fab fa-pagelines icon-color"></i></h1>
+
+                <h3>Your Budget is <strong class="budget">200</strong> €</h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container text-center">
+        <div class="bg">
+            <div class="row mt-2">
+                <div class="col">
+                    <h2>Market Place</h2>
+                    <p>(Try to GROWN and SELL your PLANT)</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <!-- SEED'S fo PLANT'S -->
+
+                <div class="col-md-2 main-bg-1 mr-1 ml-1">
+                    <i class="fas fa-seedling fa-3x mt-2"></i>
+                    <h3>Corn Seeds</h3>
+                    <button class="btnBuyCorn btn btn-success mt-2 mb-2">Buy for 10€</button>
+                    <h3 ><span class="hMCorn mt-2">0</span> x</h3>
+                    <button class="btnSellCorn btn btn-danger mt-2 mb-2">Sell</button>
+                </div>
+
+                <div class="col-md-2 main-bg-1 mr-1 ml-1">
+                    <i class="fas fa-seedling fa-3x mt-2"></i>
+                    <h3>Wheat Seeds</h3>
+                    <button class="btnBuyWheat btn btn-success mt-2 mb-2">Buy for 15€</button>
+                    <h3 ><span class="hMWheat mt-2">0</span> x</h3>
+                    <button class="btnSellWheat btn btn-danger mt-2 mb-2">Sell</button>
+                </div>
+
+                <div class="col-md-2 main-bg-1 mr-1 ml-1">
+                    <i class="fas fa-seedling fa-3x mt-2"></i>
+                    <h3>Special Seeds</h3>
+                    <button class="btnBuySpecialSeeds btn btn-success mt-2 mb-2">Buy for 50€</button>
+                    <h3 ><span class="hMSpecialSeeds mt-2">0</span> x</h3>
+                    <button class="btnSellSpecialSeeds btn btn-danger mt-2 mb-2">Sell</button>
+                </div>
+
+                <!-- WATER -->
+
+                <div class="col-md-2 main-bg-2 mr-1 ml-1">
+                    <i class="fas fa-tint fa-3x mt-2"></i>
+                    <h3>Water</h3>
+                    <button class="btnBuyWater btn btn-primary mt-2 mb-2">Buy for 25€</button>
+                    <h3><span class="hMWater mt-2">0</span>x</h3>
+                    <button class="btnSellWater btn btn-danger mt-2 mb-2">Sell</button>
+                </div>
+
+                <!-- SPECIAL WATER -->
+
+                <div class="col-md-2 main-bg-2 mr-1 ml-1">
+                    <i class="fas fa-tint fa-3x mt-2"></i>
+                    <h3>Magic Water</h3>
+                    <button class="btnBuySpecialWater btn btn-primary mt-2 mb-2">Buy for 35€</button>
+                    <h3><span class="hMSpecialWater mt-2">0</span>x</h3>
+                    <button class="btnSellSpecialWater btn btn-danger mt-2 mb-2">Sell</button>
+                </div>
+
+            </div>
+            <div class="row mt-2 justify-content-center mb-4">
+
+                <!-- SOIL'S -->
+
+                <div class="col-md-2 main-bg-3 mr-1 ml-1">
+                    <i class="fas fa-cube fa-3x mt-2"></i>
+                    <h3>Soil</h3>
+                    <button class="btnBuySoil btn btn-warning mt-2 mb-2">Buy for 10€</button>
+                    <h3><span class="hMSoil mt-2">0</span>x</h3>
+                    <button class="btnSellSoil btn btn-danger mt-2 mb-2">Sell</button>
+                </div>
+
+                <!-- SPECIAL SOIL'S -->
+
+                <div class="col-md-2 main-bg-3 mr-1 ml-1">
+                    <i class="fas fa-cube fa-3x mt-2"></i>
+                    <h3>Special Soil</h3>
+                    <button class="btnBuySpecialSoil btn btn-warning mt-2 mb-2">Buy for 25€</button>
+                    <h3><span class="hMSpecialSoil mt-2">0</span>x</h3>
+                    <button class="btnSellSpecialSoil btn btn-danger mt-2 mb-2">Sell</button>
+                </div>
+
+                <!-- TOOL'S -->
+
+                <div class="col-md-3 main-bg-4 mr-2 ml-1">
+                    <i class="fas fa-toolbox fa-3x mt-2"></i>
+                    <h3>Tools</h3>
+                    <button class="btnBuyTool btn btn-default mt-2 mb-2">Buy for 100€</button>
+                    <h3><span class="hMTool mt-2">0</span>x</h3>
+                    <button class="btnSellTool btn btn-danger mt-2 mb-2">Sell</button>
+                </div>
+
+                <!-- WORKERS'S -->
+
+                <div class="col-md-3 main-bg-5 mr-1 ml-2">
+                    <i class="fas fa-male fa-3x mt-2"></i>
+                    <h3>Workers</h3>
+                    <button class="btnBuyWorker btn btn-default mt-2 mb-2">Hire for 45€</button>
+                    <h3><span class="hMWorker mt-2">0</span>x</h3>
+                    <button class="btnSellWorker btn btn-danger mt-2 mb-2">Fired</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<section>
+    <div class="container text-center mt-5">
+        <div class="col">
+
+                <div class="instructions">
+                    <h2>Blue<span>print</span></h2>
+                    <p>
+                        Hello player below you will find a plan how to make things to make more money <br>
+                        GO ahead, study and make money.
+                    </p>
+                </div>
+                <div class="bg mt-4">
+                    <p>
+                        <i class="fas fa-seedling fa-4x mt-2"></i>1<i class="fas fa-plus fa-2x"></i> <i class="fas fa-cube fa-4x mt-2"></i>1
+                        <i class="fas fa-plus fa-2x"></i> <i class="fas fa-tint fa-4x mt-2"></i>1 <i class="fas fa-plus fa-2x"></i>
+                        <i class="fas fa-toolbox fa-4x mt-2"></i>1 <i class="fas fa-plus fa-2x"></i> <i class="fas fa-male fa-4x mt-2"></i>1
+                        <i class="fas fa-equals fa-2x"></i> <i class="fas fa-leaf fa-4x"></i>1  <i class="fas fa-equals fa-2x"></i> <i class="fas fa-euro-sign fa-4x"></i>
+                    </p>
+                    <p class="mt-5">
+                        <i class="fas fa-leaf fa-4x"></i>2 <i class="fas fa-plus fa-2x"></i>  <i class="fas fa-hands fa-4x"></i>1
+                        <i class="fas fa-equals fa-2x"></i>  <i class="fas fa-beer fa-4x"></i>1 <i class="fas fa-equals fa-2x"></i> <i class="fas fa-euro-sign fa-4x"></i>
+                    </p>
+                    <p>
+                        <i class="fas fa-leaf fa-4x"></i>1 <i class="fas fa-plus fa-2x"></i>  <i class="fas fa-hands fa-4x"></i>1
+                        <i class="fas fa-equals fa-2x"></i> <i class="fas fa-cookie-bite fa-4x"></i>1 <i class="fas fa-equals fa-2x"></i> <i class="fas fa-euro-sign fa-4x"></i>
+                    </p>
+                    <p>
+                        <i class="fas fa-leaf fa-4x"></i>1 <i class="fas fa-plus fa-2x"></i>  <i class="fas fa-hands fa-4x"></i>1
+                        <i class="fas fa-equals fa-2x"></i> <i class="fas fa-boxes fa-4x"></i>1 <i class="fas fa-equals fa-2x"></i> <i class="fas fa-euro-sign fa-4x"></i>
+                    </p>
+                </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="container text-center mt-5">
+        <div class="bg">
+            <div class="row mt-2">
+                <div class="col">
+
+                        <p>This is from <span>Stivipp &copy;</span> Production Kitchen &reg; with Cooperation of Boto Kitchen &reg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/variables.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>

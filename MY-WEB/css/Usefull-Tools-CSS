@@ -1,0 +1,36 @@
+/* clearfix */
+.container:before,
+.group:before,
+.menu:before,
+.container:after,
+.group:after,
+.menu:after {
+    content: " ";
+    display: table;
+}
+n
+.container:after,
+.group:after,
+.menu:after {
+    clear: both;
+}
+
+.container,
+.group,
+.menu {
+    *zoom: 1;
+}
+
+-------------------------------------------
+/* layout */
+.group {
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+-------------------------------------------
+/* outline */
+* {
+outline: #787776 solid 1px;
+}
+

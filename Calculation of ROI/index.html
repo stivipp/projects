@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>CODING AREA</title>
+</head>
+<body>
+
+<header>
+    <div class="container mt-4 shadow-sm p-2">
+        <div class="row ">
+            <div class="col">
+                <h1 class="p-2">Calculation of ROI</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container shadow-sm p-2">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Number of Stocks:</span>
+                    </div>
+                    <input type="number" class="form-control" id="numberOfStocks" placeholder="How many Stocks ?">
+                </div>
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Price for Stocks NOW:</span>
+                    </div>
+                    <input type="number" class="form-control" id="priceOfStocks" placeholder="What price of Stocks ?">
+                </div>
+
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">TAXES:</span>
+                    </div>
+                    <input type="number" class="form-control" id="taxes" placeholder="Taxes in your Country ?">
+                </div>
+
+                <!--Currency Buttons-->
+
+                <button name="dollar" type="button" id="dollar"><i class="fas fa-dollar-sign"></i></button>
+                <button name="dollar" type="button" id="euro"><i class="fas fa-euro-sign"></i></button>
+                <button name="dollar" type="button" id="yen"><i class="fas fa-yen-sign"></i></button>
+                <button name="dollar" type="button" id="pound"><i class="fas fa-pound-sign"></i></button>
+
+
+                <!--Buttons-->
+
+                <div class="mt-4 mb-4">
+                    <button type="button" class="btn btn-success btn-lg" id="calculate">Calculate</button>
+                    <button type="button" class="btn btn-danger btn-lg ml-2" id="reset">Reset</button>
+
+
+                    <!-- Currency Dropdown-->
+                    <div class="btn-group ml-4">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action
+                        </button>
+                        <div class="dropdown-menu currencyButton">
+                            <a class="dropdown-item" href="#">€</a>
+                            <a class="dropdown-item" href="#">$</a>
+                            <a class="dropdown-item" href="#">£</a>
+                            <a class="dropdown-item" href="#">¥</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://kurz-euro.zones.sk/kurzy/USD-dolar-spojene-staty-americke/" target="_blank">Currency Graph</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Show RESULTS -->
+
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col">
+                    <p class="totalSum">Total SUM:</p>
+                </div>
+                <div class="col result">
+                    <p id="totalSum"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p class="totalSum">Taxes SUM:</p>
+                </div>
+                <div class="col result">
+                    <p id="taxesShow"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p class="totalSumTaxes">Total SUM - TAXES:</p>
+                </div>
+                <div class="col result bolt">
+                    <p id="totalSumTaxes"></p>
+                </div>
+            </div>
+
+
+            <div class="row mt-2 mb-2">
+                <div class="col">
+                    <p class="info">Put the data into Calculation please. On the LEFT.</p>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- Image -->
+
+            <div class="col-md-4">
+                <div class="image">
+                    <img src="img/stocks.jpg" class="img-fluid rounded float-left" alt="Responsive image">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</main>
+
+
+<footer>
+ <div class="container">
+     <div class="row mt-2">
+         <div class="col">
+             <p>This is from <span>Stivipp &copy;</span> Production Kitchen  &reg;</p>
+         </div>
+     </div>
+ </div>
+</footer>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

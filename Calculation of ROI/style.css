@@ -1,0 +1,45 @@
+main .container{
+    background: #f5f5f5;
+}
+
+header h1 {
+    text-align: center;
+    color: #4892ff;
+    text-shadow: #c8c8c8 .1rem .1rem .2rem;
+    background: #f6f6f6;
+}
+
+.totalSum {
+    background: #64ea8f;
+    padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+    text-align: right;
+}
+
+.totalSumTaxes {
+    background: #64ea8f;
+    padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+    text-align: right;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer span {
+    color: #5a9ed7;
+    font-weight: bold;
+}
+
+.result {
+    text-align: center;
+    color: #292929;
+    font-size: 1.2rem;
+}
+
+.bolt {
+    font-weight: bold;
+}
+
+.currencyButton a {
+    text-align: center;
+}

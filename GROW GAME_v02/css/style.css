@@ -1,0 +1,80 @@
+main {
+    background: #ffffff;
+}
+
+h2 {
+    color: #272727;
+}
+
+.budget {
+    color: green;
+    border: solid #2a2a2a 0.1rem;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    box-shadow: #5e5e5e inset .01rem .01rem 0.2rem ;
+    text-shadow: #5e5e5e .05rem .05rem .1rem;
+
+}
+
+.main-bg-1 {
+    background: #91e86c;
+    padding: .5rem;
+    box-shadow: green .01rem .01rem 0.1rem ;
+}
+
+.main-bg-2 {
+    background: #769fff;
+    padding: .5rem;
+    box-shadow: #061180 .01rem .01rem 0.1rem ;
+}
+
+.main-bg-3 {
+    background: #e0a948;
+    padding: .5rem;
+    box-shadow: #8d5e20 .01rem .01rem 0.1rem ;
+}
+
+.main-bg-4 {
+    background: #c8c8c8;
+    padding: .5rem;
+    box-shadow: #000000 .01rem .01rem 0.1rem ;
+}
+
+.main-bg-5 {
+    background: #ff5e54;
+    padding: .5rem;
+    box-shadow: #5c0505 .01rem .01rem 0.1rem ;
+}
+
+.icon-color {
+    color: goldenrod;
+}
+
+section i {
+    padding: 0 .2rem 0 .3rem;
+}
+
+footer .bg {
+    background: #f9f9f9;
+    padding: 0.1rem;
+}
+
+main .bg {
+    background: #f1f1f1;
+    padding: 0.1rem;
+}
+
+section .bg {
+    background: #ffe8b1;
+    padding: 0.8rem;
+}
+
+.instructions {
+    border-bottom: solid .002rem #e2e2e2;
+    border-top: solid .002rem #e2e2e2;
+    padding-top: 0.5rem;
+}
+
+
+@media  {
+
+    }

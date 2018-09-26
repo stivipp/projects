@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+
+    font-family: Georgia, sans-serif;
+    color: grey;
+
+}
+
+/* clearfix */
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    *zoom: 1;
+}
+
+p {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+h1 {
+    font-weight: 500;
+    font-family: Georgia, sans-serif;
+    color: grey;
+    text-shadow: grey 1px 1px 1px;
+    text-align: center;
+
+    padding: 10px;
+}
+
+h1 strong {
+    font-family: Georgia, sans-serif;
+    color: #7c7c7c;
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+
+    border: #d1d1d1 5px solid;
+}
+
+.mainbar {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-weight: 100;
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
+
+.firstbox {
+    width: 410px;
+    height: 600px;
+
+    text-align: center;
+
+    background: #e8e8e8;
+
+    float: left;
+
+    box-shadow: black 1px 1px 6px;
+}
+
+.secondbox {
+    width: 410px;
+    height: 640px;
+    margin: 0 30px;
+
+    text-align: center;
+
+    background: #e8e8e8;
+
+    float: left;
+
+    box-shadow: black 0 1px 6px;
+}
+
+.thirdbox {
+    width: 410px;
+    height: 600px;
+
+    text-align: center;
+
+    background: #e8e8e8;
+
+    float: left;
+
+    box-shadow: black -1px 1px 6px;
+}
+
+a.btn {
+    width: 160px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: #e0a211 0 1px 3px;
+    display: block;
+
+    background: #ff8124;
+    color: white;
+    text-shadow: #e0a211 0 1px 1px ;
+
+    font-family: Monospaced, "Source Sans Pro", sans-serif;
+    text-align: center;
+    text-decoration: none;
+
+    position: relative;
+    top: -72px;
+    right: 10px;
+}
+
+a.btn:before {
+    content: '⎘';
+    color: white;
+    margin-right: 8px;
+}
+
+a:hover,
+a:focus {
+    background: #d40a0c;
+    cursor: all-scroll;
+}
+

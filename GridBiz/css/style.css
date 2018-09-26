@@ -1,0 +1,276 @@
+/* CSS VARIABLES */
+/*-------------------------------------------------*/
+
+
+:root {
+    --color-primary: #ddd;
+    --color-dark: #333;
+    --color-light: #fff;
+    --color-bg: #ccc;
+
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* GENERAL */
+/*-------------------------------------------------*/
+
+
+html {
+    box-sizing: border-box;
+    font-family: var( --font-family );
+    color: var( --dark );
+}
+
+body {
+    background: var( --color-bg );
+    margin: 2rem 3rem;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* BUTTONS */
+/*-------------------------------------------------*/
+
+
+.btn {
+    background: var( --color-dark );
+    color: var( --color-light );
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+
+/* NAVIGATION */
+/*-------------------------------------------------*/
+
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.menu a {
+    display: block;
+    padding: 0.8rem;
+
+    background: var( --color-primary );
+    color: var( --color-dark );
+    box-shadow: var( --shadow );
+
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.menu a:hover {
+    background: var( --color-dark );
+    color: var( --color-light );
+}
+
+
+/* ASIDE */
+/*-------------------------------------------------*/
+
+.top-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'showcase showcase side_a'
+        'showcase showcase side_b';
+}
+
+
+/*Showcase*/
+
+.showcase {
+    grid-area: showcase;
+    min-height: 25rem;
+
+    background: url("../img/showcase.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var( --shadow );
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var( --color-light );
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var( --color-light );
+}
+
+
+/*Side*/
+
+.side {
+    background: var( --color-primary );
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var( --shadow );
+    padding: 1.5rem;
+}
+
+
+.side_a {
+    grid-area: side_a;
+}
+
+.side .price {
+    font-size: 2.5rem;
+}
+
+.side_b {
+    grid-area: side_b;
+}
+
+
+/* BOXES */
+/*-------------------------------------------------*/
+
+
+.boxes {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr))
+}
+
+.box {
+    background: var( --color-primary );
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var( --shadow );
+
+}
+
+/* INFO */
+/*-------------------------------------------------*/
+
+
+.info {
+    background: var( --color-primary );
+    box-shadow: var( --shadow );
+
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+
+}
+
+
+/* PORTFOLIO */
+/*-------------------------------------------------*/
+
+
+.portfolio {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat( auto-fit, minmax( 12.5rem, 1fr ));
+}
+
+.portfolio img {
+    width: 100%;
+    box-shadow: var( --shadow );
+}
+
+
+/* FOOTER */
+/*-------------------------------------------------*/
+
+
+.footer {
+    margin-top: 2rem;
+    background: var( --color-dark );
+    color: var( --color-light);
+    box-shadow: var( --shadow );
+
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+/*-------------------------------------------------*/
+/* MEDIA QUERIES */
+/*-------------------------------------------------*/
+
+
+@media(max-width: 43.75rem) {
+    .top-container {
+        grid-template-areas:
+            'showcase showcase'
+            'side_a side_b';
+    }
+
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .showcase p {
+        font-size: 1rem;
+    }
+
+    .menu ul {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info .btn {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+
+@media(max-width: 31.25rem) {
+    .top-container {
+        grid-template-areas:
+                'showcase'
+                'side_a'
+                'side_b';
+    }
+
+    .showcase h1 {
+        font-size: 1.9rem;
+    }
+
+    .showcase p {
+        font-size: 1rem;
+    }
+
+}

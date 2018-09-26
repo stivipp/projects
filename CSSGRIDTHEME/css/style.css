@@ -1,0 +1,248 @@
+/* CSS VARIABLES */
+/*-------------------------------------------------*/
+
+
+:root {
+    --font-family: Arial, Helvetica, sans-serif;
+
+    --font-size-basic: 1.1rem;
+
+    --color-bg: #333;
+    --color-bg-f: #000;
+    --color-font: #fff;
+    --color-bg-s: #fff;
+    --color-font-s: #333;
+
+    --color-btn: #333;
+    --color-btn-bd: #666;
+    --color-btn-hf: #eaeaea;
+    --color-sec-a: #eaeaea;
+
+    --color-bg-sec-d: #2690d4;
+    --color-a: #2690d4;
+}
+
+
+/* GENERAL */
+/*-------------------------------------------------*/
+
+
+body {
+    margin: 0;
+
+    font-family: var( --font-family );
+    background:  var( --color-bg );
+    color: var( --color-font);
+
+    font-size: var( --font-size-basic );
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*IMG*/
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*BUTTONS*/
+.btn {
+    display: inline-block;
+    margin: 0.5rem 0;
+
+    background: var( --color-btn );
+    color: var( --color-font );
+
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid var( --color-btn-bd );
+}
+
+.btn:hover,
+.btn:focus {
+    background: var( --color-btn-hf );
+    color: var( --color-btn );
+}
+
+
+/*CONTENT-WRAP*/
+.showcase .content-wrap,
+.section-a .content-wrap {
+    padding: 0 1.5rem;
+}
+
+
+/* HEADERS SHOWCASE */
+/*-------------------------------------------------*/
+
+
+.showcase {
+    min-height: 28.125rem;
+    color: var( --color-font );
+    text-align: center;
+
+}
+
+
+.showcase .bg-image {
+    position: absolute;
+    background: var( --color-bg ) url("../img/showcase-coding.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 28.125rem;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+.showcase h1 {
+    padding: 6.25rem 0 0;
+}
+
+
+/* MAIN AREA */
+/*-------------------------------------------------*/
+
+
+/*Section A*/
+
+
+.section-a {
+    background: var( --color-sec-a );
+    color: var( --color-bg );
+    padding-bottom: 2rem;
+}
+
+.section-a h2 {
+    padding: 2rem 0 0;
+}
+
+
+/*Section B*/
+
+
+.section-b {
+    padding: 2rem 1rem 1rem;
+}
+
+.section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section-b li {
+    margin-bottom: 1rem;
+    background: var( --color-bg-s );
+    color: var( --color-font-s );
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+
+/*Section C*/
+
+
+.section-c {
+    background: var( --color-bg-s );
+    color: var( --color-font-s );
+    padding: 2rem;
+}
+
+
+/*Section D*/
+
+
+.section-d .box {
+    padding: 2rem;
+}
+
+.section-d .box:first-child {
+    background: var( --color-bg-sec-d ) ;
+}
+
+
+/* FOOTER */
+/*-------------------------------------------------*/
+
+
+.main-footer {
+    padding: 2rem;
+    background: var( --color-bg-f );
+    color: var( --color-font );
+    text-align: center;
+}
+
+.main-footer a {
+    color: var( --color-a );
+}
+
+
+
+/*-------------------------------------------------*/
+/* MEDIA QUERIES */
+/*-------------------------------------------------*/
+
+@media (min-width: 43.75rem)  {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25rem)) 1fr;
+    }
+
+    .content-wrap,
+    .section-b ul {
+        grid-column: 2/4;
+    }
+
+    .box, .main-footer div {
+        grid-column: span 2;
+    }
+
+
+    /*SECTION A*/
+
+
+    .content-text {
+        columns: 3;
+        column-gap: 2rem;
+    }
+
+    .content-text p {
+        padding-top: 0;
+    }
+
+    h2.content-title {
+        padding-bottom: 1rem;
+    }
+
+
+    /*SECTION B*/
+
+
+    .section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section-b li {
+        width: 31%;
+    }
+
+}
